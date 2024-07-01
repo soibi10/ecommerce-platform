@@ -1,1 +1,1 @@
-# Ecommerce Platform
+# ecommerce-platform
