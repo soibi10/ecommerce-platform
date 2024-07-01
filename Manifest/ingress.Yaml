@@ -1,0 +1,32 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: e-commerce-ingress
+  annotations:
+    konghq.com/strip-path: "true"
+spec:
+  rules:
+  - host: your-domain.com
+    http:
+      paths:
+      - path: /products
+        pathType: ImplementationSpecific
+        backend:
+          service:
+            name: product-service
+            port:
+              number: 80
+      - path: /cart
+        pathType: ImplementationSpecific
+        backend:
+          service:
+            name: cart-service
+            port:
+              number: 80
+      - path: /orders
+        pathType: ImplementationSpecific
+        backend:
+          service:
+            name: order-service
+            port:
+              number: 80
