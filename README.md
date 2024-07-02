@@ -129,6 +129,3 @@ Create an Ingress resource to route traffic to the appropriate microservices.
 2. Check logs of the Kong Ingress Controller.
 3. Describe resources for more details.
 4. Check ArgoCD application events.
-
-
-This detailed README documentation provides a comprehensive guide for setting up the microservices, Kong API Gateway, ArgoCD, Prometheus, and Grafana configuration, as well as instructions for testing and debugging the setup.
